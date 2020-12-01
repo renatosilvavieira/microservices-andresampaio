@@ -1,0 +1,35 @@
+version: '3.4'
+
+services:
+    fiap.microservices.pedidos.api:
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Development
+        ports:
+            - "5001:80"
+
+    fiap.microservices.entregas.api:
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Development
+        ports:
+            - "5002:80"
+            
+    fiap.microservices.produtos.api:
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Development
+        ports:
+            - "5003:80"
+
+    rabbitmq:
+        container_name: rabbitmq
+        restart: always
+        ports:
+            - "5672:5672"
+            - "15672:15672"
+
+    fiapDb:
+        container_name: fiapDb
+        ports:
+            - "1455:1433"
+        environment:
+            MSSQL_SA_PASSWORD: "Passw0rd(!)"
+            ACCEPT_EULA: "Y"

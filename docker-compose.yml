@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+    fiap.microservices.pedidos.api:
+        image: ${DOCKER_REGISTRY-}pedidosapi
+        build:
+            context: .
+            dockerfile: Pedidos/Fiap.Microservices.Pedidos.Api/Dockerfile
+
+    fiap.microservices.entregas.api:
+        image: ${DOCKER_REGISTRY-}entregasapi
+        build:
+            context: .
+            dockerfile: Entregas/Fiap.Microservices.Entregas.Api/Dockerfile
+
+    fiap.microservices.produtos.api:
+        image: ${DOCKER_REGISTRY-}produtosapi
+        build:
+            context: .
+            dockerfile: Produtos/Fiap.Microservices.Produtos.Api/Dockerfile
+
+    rabbitmq:
+        image: rabbitmq:3-management-alpine
+
+    fiapDb:
+        image: mcr.microsoft.com/mssql/server

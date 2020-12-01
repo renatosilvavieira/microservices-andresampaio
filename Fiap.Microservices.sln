@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Produtos", "Produtos", "{9BE6D296-15BE-4114-8052-1E8AECFCBA92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pedidos", "Pedidos", "{05684C99-AB8B-419A-B973-00268760D892}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entregas", "Entregas", "{14447E3E-A84B-480D-85C3-10A824CBB653}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Front", "Front", "{56DABB94-4311-4AAF-95DC-7AACE913AE4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{01EC63E6-EB7F-42B7-8684-6033596F6DB7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Microservices.Produtos.Api", "Produtos\Fiap.Microservices.Produtos.Api\Fiap.Microservices.Produtos.Api.csproj", "{BF7AAE7B-C933-4EAD-8CF1-7802DCFF2855}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Microservices.Pedidos.Api", "Pedidos\Fiap.Microservices.Pedidos.Api\Fiap.Microservices.Pedidos.Api.csproj", "{CFE0C577-5C71-4ACD-BEB5-4F417B2EF627}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Microservices.Entregas.Api", "Entregas\Fiap.Microservices.Entregas.Api\Fiap.Microservices.Entregas.Api.csproj", "{BAB62EAC-C4DC-46AD-8239-50A658C199D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Microservices.Front.Mvc", "Front\Fiap.Microservices.Front.Mvc\Fiap.Microservices.Front.Mvc.csproj", "{7FBFAC32-289E-4A2B-8B71-EBB27DF9632D}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{608F2891-BF0D-4020-A84E-F31F26D0C893}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF7AAE7B-C933-4EAD-8CF1-7802DCFF2855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF7AAE7B-C933-4EAD-8CF1-7802DCFF2855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF7AAE7B-C933-4EAD-8CF1-7802DCFF2855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF7AAE7B-C933-4EAD-8CF1-7802DCFF2855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFE0C577-5C71-4ACD-BEB5-4F417B2EF627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFE0C577-5C71-4ACD-BEB5-4F417B2EF627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFE0C577-5C71-4ACD-BEB5-4F417B2EF627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE0C577-5C71-4ACD-BEB5-4F417B2EF627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAB62EAC-C4DC-46AD-8239-50A658C199D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAB62EAC-C4DC-46AD-8239-50A658C199D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAB62EAC-C4DC-46AD-8239-50A658C199D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAB62EAC-C4DC-46AD-8239-50A658C199D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FBFAC32-289E-4A2B-8B71-EBB27DF9632D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FBFAC32-289E-4A2B-8B71-EBB27DF9632D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FBFAC32-289E-4A2B-8B71-EBB27DF9632D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FBFAC32-289E-4A2B-8B71-EBB27DF9632D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{608F2891-BF0D-4020-A84E-F31F26D0C893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{608F2891-BF0D-4020-A84E-F31F26D0C893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{608F2891-BF0D-4020-A84E-F31F26D0C893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{608F2891-BF0D-4020-A84E-F31F26D0C893}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BF7AAE7B-C933-4EAD-8CF1-7802DCFF2855} = {9BE6D296-15BE-4114-8052-1E8AECFCBA92}
+		{CFE0C577-5C71-4ACD-BEB5-4F417B2EF627} = {05684C99-AB8B-419A-B973-00268760D892}
+		{BAB62EAC-C4DC-46AD-8239-50A658C199D9} = {14447E3E-A84B-480D-85C3-10A824CBB653}
+		{7FBFAC32-289E-4A2B-8B71-EBB27DF9632D} = {56DABB94-4311-4AAF-95DC-7AACE913AE4C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F55EEF0D-E153-471B-80C4-08937DBEEBA2}
+	EndGlobalSection
+EndGlobal
